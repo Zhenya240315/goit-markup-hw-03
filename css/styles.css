@@ -1,11 +1,11 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 :root {
   --title-color: #212121;
@@ -13,10 +13,17 @@ box-sizing: inherit;
   --accent-color: #2196f3;
   --main-backgroud: #e5e5e5;
 }
-p,h1,h2,h3,h4,h5,h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
-ul,ol {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
@@ -27,9 +34,8 @@ ul,ol {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
-button{
+button {
   border: 1px solid transparent;
 }
 img {
@@ -37,14 +43,15 @@ img {
 }
 
 body {
-  font-family: "Roboto", "Open Sans", sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
   color: #212121;
 }
 
 /*-----------header----------- */
-.header{
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 ul {
   list-style: none;
@@ -57,13 +64,12 @@ ul {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   color: #2196f3;
-  
 }
 
 .studio {
@@ -73,9 +79,8 @@ ul {
   color: #2196f3;
 }
 
-
 .header-link {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -96,20 +101,20 @@ ul {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-.header>.container{
+.header > .container {
   display: flex;
   align-items: center;
 }
-.header-list{
+.header-list {
   display: flex;
 }
 .header-item:not(:last-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
-.header-logo{
+.header-logo {
   margin-right: 93px;
 }
-.header-contacts{
+.header-contacts {
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -127,9 +132,7 @@ margin-right: 50px;
 }
 
 /*-----------MAIN-----------*/
-.main {
-  background-color: var(--main-backgroud);
-}
+
 .title {
   background-color: #2f303a;
   padding-top: 200px;
@@ -137,18 +140,18 @@ margin-right: 50px;
   text-align: center;
 }
 .title-item {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  
+
   color: #ffffff;
 }
 
 .title-btn {
   border-radius: 4px;
   padding: 10px 32px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -157,15 +160,14 @@ margin-right: 50px;
   color: #ffffff;
   display: block;
   min-width: 200px;
-  
+
   margin: 30px auto 0;
-  
 }
 .description {
   padding-top: 94px;
 }
 
-.description-list{
+.description-list {
   display: flex;
   gap: 30px;
 }
@@ -195,11 +197,10 @@ margin-right: 50px;
   margin-bottom: 50px;
   text-align: center;
 }
-.work-image{
+.work-image {
   display: flex;
   gap: 30px;
 }
-
 
 /*-----------Team-----------*/
 
@@ -218,12 +219,12 @@ margin-right: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
-.team-list{
+.team-list {
   display: flex;
   gap: 30px;
 }
-.team-item{
-padding-bottom: 30px;
+.team-item {
+  padding-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -275,7 +276,7 @@ padding-bottom: 30px;
 .footer-mail {
   font-style: normal;
   font-size: 14px;
-  line-height: calc(24/14);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -296,17 +297,16 @@ padding-bottom: 30px;
 
 /*-----------Buttons-----------*/
 
-.main-content{
+.main-content {
   padding-top: 94px;
   padding-bottom: 94px;
-  
 }
 
-.filter{
+.filter {
   margin-bottom: 34px;
   display: flex;
   gap: 8px;
-justify-content: center;
+  justify-content: center;
 }
 
 .filter-button:hover,
@@ -316,7 +316,7 @@ justify-content: center;
   color: #ffffff;
 }
 .filter-button {
-  font-family:"Roboto";
+  font-family: 'Roboto';
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -332,7 +332,7 @@ justify-content: center;
 
 /*-----------Blocks-----------*/
 
-.blocks{
+.blocks {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -342,7 +342,6 @@ justify-content: center;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-color);
-  
 }
 .block-group {
   font-size: 16px;
@@ -352,7 +351,8 @@ justify-content: center;
   margin-top: 4px;
 }
 
-
-.block-text{
+.block-text {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
 }
