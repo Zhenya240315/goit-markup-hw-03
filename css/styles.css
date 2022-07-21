@@ -1,8 +1,39 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
 :root {
   --title-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
   --main-backgroud: #e5e5e5;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+ul,ol {
+  margin: 0;
+  padding-left: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+button{
+  border: 1px solid transparent;
+}
+img {
+  display: block;
 }
 
 body {
@@ -11,6 +42,10 @@ body {
 }
 
 /*-----------header----------- */
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 ul {
   list-style: none;
 }
@@ -36,6 +71,10 @@ ul {
 .header-list .header-link.current {
   color: #2196f3;
 }
+.header-list{
+  display: flex;
+}
+
 .header-link {
   font-family: "Roboto";
   font-weight: 500;
@@ -73,16 +112,24 @@ ul {
 .main {
   background-color: var(--main-backgroud);
 }
+.title {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
 .title-item {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  background-color: #2f303a;
+  
   color: #ffffff;
 }
 
 .title-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -90,13 +137,22 @@ ul {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: #ffffff;
+  display: block;
+  min-width: 200px;
+  
+  margin: 30px auto 0;
+  
+}
+.description {
+  padding-top: 94px;
+  
 }
 
 .description-title {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-
+  margin-bottom: 10px;
   color: var(--title-color);
 }
 
@@ -113,11 +169,17 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.work{
+  padding-top: 94px;
+  
+}
 
 /*-----------Team-----------*/
 
 .team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -125,6 +187,8 @@ ul {
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: var(--title-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .team-name {
@@ -145,6 +209,8 @@ ul {
 /*-----------footer-----------*/
 .ftr {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .ftr-studio {
@@ -164,6 +230,7 @@ ul {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  margin-top: 20px;
   color: #ffffff;
 }
 
@@ -174,6 +241,8 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-tel {
