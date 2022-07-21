@@ -63,6 +63,7 @@ ul {
   font-size: 26px;
   line-height: 31px;
   color: #2196f3;
+  
 }
 
 .studio {
@@ -71,9 +72,7 @@ ul {
 .header-list .header-link.current {
   color: #2196f3;
 }
-.header-list{
-  display: flex;
-}
+
 
 .header-link {
   font-family: "Roboto";
@@ -96,6 +95,25 @@ ul {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+.header>.container{
+  display: flex;
+  align-items: center;
+}
+.header-list{
+  display: flex;
+}
+.header-item:not(:last-child) {
+margin-right: 50px;
+}
+.header-logo{
+  margin-right: 93px;
+}
+.header-contacts{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .header-mail:hover,
@@ -145,7 +163,11 @@ ul {
 }
 .description {
   padding-top: 94px;
-  
+}
+
+.description-list{
+  display: flex;
+  gap: 30px;
 }
 
 .description-title {
@@ -162,17 +184,22 @@ ul {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
+.work {
+  padding-top: 94px;
+}
 .work-title {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
+  text-align: center;
 }
-.work{
-  padding-top: 94px;
-  
+.work-image{
+  display: flex;
+  gap: 30px;
 }
+
 
 /*-----------Team-----------*/
 
@@ -189,14 +216,23 @@ ul {
   color: var(--title-color);
   padding-top: 94px;
   padding-bottom: 50px;
+  text-align: center;
 }
-
+.team-list{
+  display: flex;
+  gap: 30px;
+}
+.team-item{
+padding-bottom: 30px;
+}
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-top: 30px;
+  text-align: center;
 }
 
 .team-work-position {
@@ -204,6 +240,8 @@ ul {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-top: 10px;
+  text-align: center;
 }
 
 /*-----------footer-----------*/
@@ -258,6 +296,19 @@ ul {
 
 /*-----------Buttons-----------*/
 
+.main-content{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+}
+
+.filter{
+  margin-bottom: 34px;
+  display: flex;
+  gap: 8px;
+justify-content: center;
+}
+
 .filter-button:hover,
 .filter-button:focus {
   cursor: pointer;
@@ -266,24 +317,42 @@ ul {
 }
 .filter-button {
   font-family:"Roboto";
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: #212121;
   background: #f5f4fa;
+  border-radius: 4px;
+  display: block;
+  min-width: 73px;
+  text-align: center;
 }
 
 /*-----------Blocks-----------*/
+
+.blocks{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 .block-name {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-color);
+  
 }
 .block-group {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-top: 4px;
+}
+
+
+.block-text{
+  padding: 20px 24px;
 }
